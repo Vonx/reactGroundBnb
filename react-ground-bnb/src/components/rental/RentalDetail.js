@@ -9,6 +9,9 @@ export class RentalDetail extends React.Component {
     }
 
     render(){
+        console.log(this.props);
+        console.log("the id is " + this.props.match.params.id);
+        debugger;
         return (
             <div>I am detail component.
             </div>

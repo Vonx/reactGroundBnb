@@ -4,7 +4,7 @@ import { Provider }from 'react-redux';
 import logo from './logo.svg';
 import {Header} from './shared/Header';
 import RentalList from './components/rental/RentalList';
-import {RentalDetail} from './components/rental/RentalDetail';
+import RentalDetail from './components/rental/RentalDetail';
 import './App.css';
 
 const store = require('./reducers').init();

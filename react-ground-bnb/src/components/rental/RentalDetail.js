@@ -15,15 +15,21 @@ class RentalDetail extends React.Component {
 
     render(){
         const rental = this.props.rental;
-        debugger;
-        return (
-            <RentalCard
-                        colNum = 'col-md-3 col-xs-6'
-                        rental = {rental}
-            />
-        );
-    }
 
+        if(rental.id) {
+            return (
+                <RentalCard
+                    colNum='col-md-3 col-xs-6'
+                    rental={rental}
+                />
+            );
+        }
+        else{
+            return (
+                <div>Loading..</div>
+            )
+        }
+    }
 }
 
 function mapStateToProps(state){

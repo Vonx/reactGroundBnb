@@ -16,7 +16,7 @@ mongoose.connect(config.MONGO_URI, { useNewUrlParser: true }).then(()=>{
 
 app.use('/api/v1/rentals', rentalRoutes);
 
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
 app.listen(PORT, function(){console.log('i am running')});
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import {MapWithGeocode} from "../../map/googleMap";
+import {googleApi} from '../../../helpers/googleHelpers';
 
 export class RentalMap extends React.Component {
 
@@ -9,9 +10,9 @@ export class RentalMap extends React.Component {
         const location = this.props.location;
 
         return (
-
+// googleMapURL is imported and not pushed to github, needs to be provided
             <MapWithGeocode
-                googleMapURL="https://maps.googleapis.com/maps/api/js?key="
+                googleMapURL={googleApi}
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `360px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

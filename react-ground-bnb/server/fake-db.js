@@ -53,8 +53,6 @@ class FakeDb {
         this.cleanDb();
         this.pushRentalsToDb();
     }
-
-
 }
 
 module.exports = FakeDb;

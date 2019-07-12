@@ -6,7 +6,7 @@ export const fetchRentals = () => {
     return function(dispatch){
 
         // send request to server
-        axios.get('http://localhost:30025/api/v1/rentals').then((rentals)=>{
+        axios.get('http://localhost:3000/api/v1/rentals').then((rentals)=>{
             dispatch(fetchRentalsSuccess(rentals.data));
         });
     }
@@ -19,7 +19,7 @@ return function(dispatch){
     // send request to server
     dispatch(fetchRentalByIdInit());
 
-    axios.get(`http://localhost:30025/api/v1/rentals/${rentalId}`).then((rental)=>{
+    axios.get(`http://localhost:3000/api/v1/rentals/${rentalId}`).then((rental)=>{
         dispatch(fetchRentalByIdSuccess(rental.data));
     });
 }

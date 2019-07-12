@@ -65,7 +65,7 @@ function withGeocode(WrappedComponent){
           }
 
           else{
-              debugger;
+
             this.geoLocation(location).then(
                 (coordinates)=>{
                     this.updateCoordinates(coordinates);

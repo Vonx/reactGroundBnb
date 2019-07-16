@@ -1,69 +1,75 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form';
+import {formInput} from '../shared/form/formInput';
+import {DisplayError} from '../shared/form/displayError';
 
 const RegisterForm = props => {
-    const { handleSubmit, pristine, reset, submitting, submitCb} = props
+    const { handleSubmit, pristine, reset, submitting, submitCb, valid, errors} = props;
     return (
-        <form onSubmit={handleSubmit((submitCb)=>{
-            debugger;
-
-        })}>
-            <div>
-                <label>User Name</label>
-                <div>
+        <form onSubmit={handleSubmit((submitCb))}>
                     <Field
                         name="username"
-                        component="input"
                         type="text"
+                        label="Username"
                         placeholder="First Name"
                         className="form-control"
+                        component={formInput}
                     />
-                </div>
-            </div>
-            <div>
-                <label>Email</label>
-                <div>
+
                     <Field
                         name="email"
-                        component="input"
                         type="email"
+                        label="Email"
                         placeholder="Email"
                         className="form-control"
+                        component={formInput}
                     />
-                </div>
-            </div>
-            <div>
-                <label>Password</label>
-                <div>
+
                     <Field
                         name="password"
-                        component="input"
                         type="password"
+                        label="Password"
                         className="form-control"
+                        component={formInput}
                     />
-                </div>
-            </div>
-            <div>
-                <label>Confirmation Password</label>
-                <div>
                     <Field
-                        name="conformationPassword"
-                        component="input"
+                        name="passwordConfirmation"
                         type="password"
+                        label="Password Confirmation"
                         className="form-control"
+                        component={formInput}
                     />
-                </div>
-            </div>
-            <div>
-                <button className="btn btn-bwm btn-form" type="submit" disabled={pristine || submitting}>
+                <button className="btn btn-success" type="submit" disabled={!valid || pristine || submitting}>
                     Submit
                 </button>
-
-            </div>
+            <DisplayError errors={errors}/>
         </form>
     )
 };
 
+const validate = values => {
+  const errors = {};
+
+  if(values.username && values.username.length < 4) {
+      errors.username = "Username min length requirement is 4 characters";
+  }
+
+    if (!values.email) {
+        errors.email = 'Required';
+    }
+    if (!values.passwordConfirmation) {
+        errors.passwordConfirmation = 'Enter password confirmation';
+    }
+
+    if (values.password && values.passwordConfirmation && values.password !== values.passwordConfirmation) {
+        errors.password = 'Passwords must match';
+    }
+
+    return errors;
+};
+
+
 export default reduxForm({
-    form: 'registerForm' // a unique identifier for this form
+    form: 'registerForm',
+    validate// a unique identifier for this form
 })(RegisterForm)

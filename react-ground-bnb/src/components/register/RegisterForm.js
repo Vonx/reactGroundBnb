@@ -40,7 +40,7 @@ const RegisterForm = props => {
                         component={formInput}
                     />
                 <button className="btn btn-success" type="submit" disabled={!valid || pristine || submitting}>
-                    Submit
+                    Register
                 </button>
             <DisplayError errors={errors}/>
         </form>

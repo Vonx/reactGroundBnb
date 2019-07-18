@@ -1,6 +1,7 @@
 import React from 'react';
 import RegisterForm from './RegisterForm';
 import * as actions from '../../actions/index';
+import {Redirect} from 'react-router-dom';
 
 
 export default class Register extends React.Component {
@@ -8,8 +9,9 @@ export default class Register extends React.Component {
     constructor(){
         super();
         this.state = {
-            errors: []
-        }
+            errors: [],
+            redirect: false
+        };
 
         this.registerUser = this.registerUser.bind(this);
     }
@@ -18,15 +20,21 @@ export default class Register extends React.Component {
 
         actions.register(userData).then(
             (registered)=>{
+                this.setState({redirect: true});
             console.log('registered')},
-            (errs)=>{console.log('errs')
+            (errs)=>{console.log('errs');
                 this.setState({errors: errs})
             });
     }
 
     render() {
 
-        const {errors} = this.state;
+        const {errors, redirect} = this.state;
+
+        if(redirect){
+            return <Redirect to={{pathname: '/login', state: {successRegister: true}}} />
+
+        }
         return (
         <section id='register'>
             <div className='bwm-form'>

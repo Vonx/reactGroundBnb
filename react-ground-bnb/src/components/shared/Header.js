@@ -1,6 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import {connect} from "react-redux";
+import * as actions from "../../actions";
 
 
 class Header extends React.Component {
@@ -9,10 +10,30 @@ class Header extends React.Component {
         super();
     }
 
+    logoutUser(){
+        this.props.dispatch(actions.logout());
+        this.props.history.push('/login');
+    }
 
+    renderAuthButtons() {
+        const {isAuth} = this.props.auth;
+
+        if(isAuth){
+
+            return <div className='navbar-nav ml-auto clickable'>
+                <a className='nav-item nav-link' onClick={()=>{this.logoutUser()}}>Logout</a>
+            </div>
+
+        }
+        return (
+            <React.Fragment>
+                <Link className='nav-item nav-link active' to='/login'>Login <span className='sr-only'>(current)</span></Link>
+                <Link className='nav-item nav-link' to='/register'>Register</Link>
+            </React.Fragment>
+        )
+    }
     render() {
 
-        const {isAuth} = this.props.auth;
         return (
             <nav className='navbar navbar-dark navbar-expand-lg'>
                 <div className='container'>
@@ -26,8 +47,7 @@ class Header extends React.Component {
                     </button>
                     <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
                         <div className='navbar-nav ml-auto'>
-                            {!isAuth && <Link className='nav-item nav-link active' to='/login'>Login <span className='sr-only'>(current)</span></Link>}
-                            <Link className='nav-item nav-link' to='/register'>Register</Link>
+                            {this.renderAuthButtons()}
                         </div>
                     </div>
                 </div>
@@ -44,4 +64,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Header)
+export default withRouter(connect(mapStateToProps)(Header))

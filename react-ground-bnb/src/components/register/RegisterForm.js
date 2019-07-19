@@ -4,7 +4,7 @@ import {formInput} from '../shared/form/formInput';
 import {DisplayError} from '../shared/form/displayError';
 
 const RegisterForm = props => {
-    const { handleSubmit, pristine, reset, submitting, submitCb, valid, errors} = props;
+    const { handleSubmit, pristine, submitting, submitCb, valid, errors} = props;
     return (
         <form onSubmit={handleSubmit((submitCb))}>
                     <Field

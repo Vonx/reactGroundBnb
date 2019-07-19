@@ -3,17 +3,21 @@ import {
     FETCH_RENTAL_BY_ID_INIT,
     FETCH_RENTALS_SUCCESS,
     LOGIN_FAILURE,
-    LOGIN_SUCCESS
+    LOGIN_SUCCESS,
+    LOGOUT
 } from './types';
 import axios from 'axios';
 import authService from '../services/auth-service';
+import axiosService from '../services/axios-service';
+
+const axiosInstance = axiosService.getInstance();
 
 
 export const fetchRentals = () => {
     return function(dispatch){
 
         // send request to server
-        axios.get('http://localhost:3000/api/v1/rentals').then((rentals)=>{
+        axiosInstance.get('/rentals').then((rentals)=>{
             dispatch(fetchRentalsSuccess(rentals.data));
         });
     }
@@ -95,11 +99,17 @@ export const login = (userData) => {
         return axios.post('/api/v1/users/auth', {...userData}).then((res)=> {
             return res.data;
         }).then((token)=> {
-    debugger;
-            localStorage.setItem('auth_token', token);
+            authService.saveToken(token);
             dispatch(loginSuccess());
         }).catch((err)=>{
             dispatch(loginFailure(err.response.data.errors))
         })
+    }
+};
+
+export const logout = () => {
+    authService.invalidateToken();
+    return {
+        type: LOGOUT
     }
 };

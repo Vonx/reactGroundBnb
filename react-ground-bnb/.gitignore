@@ -27,3 +27,4 @@ yarn-error.log*
 
 /server/config/def.js
 /src/helpers/googleHelpers.js
+*/public/image/*

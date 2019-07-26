@@ -9,21 +9,26 @@ router.get('/secret', userController.authMiddleware, function(req, res) {
 });
 
 router.get('', function(req, res){
-    Rental.find({}, function(err, foundRentals){
-        res.json(foundRentals);
-    });
+    Rental.find({})
+        .select('-bookings')
+        .exec(function(err, foundRentals){
+            res.json(foundRentals);
+        });
 });
 
 router.get('/:id', function(req, res){
-    Rental.findById(req.params.id, function(err, foundRental){
-        if(err){
-            res.status(422).send({errors: [{title: 'error', detail: 'could not find rental'}]});
-        }
-        else{
-            res.json(foundRental);
-        }
+    const rentalId = req.params.id;
 
-    });
+    Rental.findById(rentalId)
+        .populate('user', 'username -_id')
+        .populate('bookings', 'startAt endAt -_id')
+        .exec((err, foundRental)=>{
+            if(err){
+                return res.status(422).send({errors: [{title: 'error', detail: 'could not find rental'}]});
+            }
+               return res.json(foundRental);
+        })
+
 });
 
 module.exports = router;

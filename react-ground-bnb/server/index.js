@@ -2,11 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const config = require('./config/def');
-const Rental = require('./models/rental');
 const FakeDb = require('./fake-db');
 
 const rentalRoutes = require('./routes/rentals'),
-      userRoutes = require('./routes/users');
+      userRoutes = require('./routes/users'),
+      bookingRoutes = require('./routes/bookings');
+
 
 // Connection URL
 
@@ -21,6 +22,7 @@ app.use(bodyParser.json());
 
 app.use('/api/v1/rentals', rentalRoutes);
 app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/bookings', bookingRoutes);
 
 const PORT = 3001;
 

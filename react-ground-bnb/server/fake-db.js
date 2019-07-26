@@ -43,10 +43,17 @@ class FakeDb {
             email: "fakeemail@gmail.com",
             password: "fakepass"
 
-        }]
+        },
+            {
+                username: "fakeuser1",
+                email: "fakeemail1@gmail.com",
+                password: "fakepass1"
+
+            }]
     };
      pushDatatoDb() {
          const user = new User(this.users[0]);
+         const user1 = new User(this.users[1]);
 
         this.rentals.forEach((rental) =>{
         const newRental = new Rental(rental);
@@ -57,6 +64,7 @@ class FakeDb {
         });
 
         user.save();
+        user1.save();
     }
     async cleanDb(){
         await User.deleteMany({});

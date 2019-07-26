@@ -19,7 +19,8 @@ const userSchema = new Schema({
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]
     },
     password: {type: String, required: 'Password is required', max: [32, 'Too long, max is 32 characters'], min: [4, 'Too short, min is 4 characters']},
-    rentals: [{type: Schema.Types.ObjectId, ref: 'Rental'}]
+    rentals: [{type: Schema.Types.ObjectId, ref: 'Rental'}],
+    bookings: [{type: Schema.Types.ObjectId, ref: 'Booking'}]
 });
 
 

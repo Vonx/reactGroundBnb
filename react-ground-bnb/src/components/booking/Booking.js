@@ -1,7 +1,10 @@
 import React from 'react';
 import DateRangePicker from 'react-bootstrap-daterangepicker';
+import { ToastContainer, toast } from 'react-toastify';
 import {getRangeOfDates} from "../../helpers";
 import * as moment from 'moment';
+import * as actions from 'actions';
+import {BookingModal} from "./BookingModal";
 
 export class Booking extends React.Component {
     constructor(){
@@ -11,14 +14,24 @@ export class Booking extends React.Component {
       this.dateRef = React.createRef();
 
       this.state = {
-          startAt: '',
-          endAt: '',
-          guests: 0
+          proposedBooking: {
+              startAt: '',
+              endAt: '',
+              guests: ''
+          },
+          modal: {
+              open: false
+          },
+          error: []
+
       };
 
       this.checkInvalidDates = this.checkInvalidDates.bind(this);
       this.handleDateClick = this.handleDateClick.bind(this);
       this.selectGuests = this.selectGuests.bind(this);
+      this.cancelBooking = this.cancelBooking.bind(this);
+      this.reserveBooking = this.reserveBooking.bind(this);
+        this.reserveRental = this.reserveRental.bind(this);
     }
 
     componentWillMount() {
@@ -33,9 +46,8 @@ export class Booking extends React.Component {
 
             bookings.forEach((booking)=>{
 
-               const dateRange = getRangeOfDates(booking.startAt, booking.endAt, 'Y/M/D');
+               const dateRange = getRangeOfDates(booking.startAt, booking.endAt, 'Y/MM/DD');
                this.bookingTimes.push(...dateRange);
-               console.log(this.bookingTimes);
 
             })
         }
@@ -43,7 +55,7 @@ export class Booking extends React.Component {
     }
 
     checkInvalidDates(date) {
-        return this.bookingTimes.includes(date.format('Y/MM/DD')) || date.diff(moment(), 'days') < 0
+        return this.bookingTimes.includes(date.format('Y/MM/DD')) || date.diff(moment(), 'days') < 0;
     }
 
     handleDateClick(event, picker){
@@ -53,26 +65,90 @@ export class Booking extends React.Component {
 
         this.dateRef.current.value = startAt + ' to ' + endAt;
 
-        this.setState({startAt: startAt, endAt: endAt, });
-        console.log(this.state);
+        this.setState({proposedBooking:{
+                ...this.state.proposedBooking,
+                startAt: startAt, endAt: endAt
+            }
+        });
 
     }
 
     selectGuests(event){
-        this.setState({guests: parseInt(event.target.value)});
+        this.setState({proposedBooking:{
+                ...this.state.proposedBooking,
+            guests: parseInt(event.target.value)
+            }
+        });
 
     }
 
-    reserveBooking(startDate, endDate){
+    cancelBooking(){
 
-            console.log('yay' + startDate, endDate);
+        this.setState({modal: {
+            open: false
+            }
+        });
+
     }
+
+    addNewBookedOutDates(booking){
+        const dateRange = getRangeOfDates(booking.startAt, booking.endAt, 'Y/MM/DD');
+        this.bookingTimes.push(...dateRange);
+
+    }
+
+    reserveBooking(){
+            const {startAt, endAt} = this.state.proposedBooking;
+
+            const days = getRangeOfDates(startAt, endAt, 'Y/MM/DD').length - 1;
+            const {rental} = this.props;
+
+            this.setState({
+                proposedBooking: {
+                    ...this.state.proposedBooking,
+                    days,
+                    price: rental.dailyRate * days,
+                    rental
+                },
+                modal: {
+                    open: true
+                }
+            });
+
+    }
+
+    reserveRental() {
+        actions.createBooking(this.state.proposedBooking).then((booking) => {
+
+
+              console.log('reserve rental booking called');
+              this.addNewBookedOutDates(booking);
+              this.cancelBooking();
+              this.resetForm();
+              toast.success('Booking has been successfully created!');
+
+        }, (err) => {
+            console.log('err');
+            this.setState({error: err});
+        });
+    }
+
+    resetForm() {
+        this.dateRef.current.value = '';
+
+        this.setState({proposedBooking: {guests: ''}})
+
+
+    }
+
 
     render() {
         const {rental} = this.props;
+        const {startAt, endAt, guests} = this.state.proposedBooking;
         return (
 
             <div className='booking'>
+                <ToastContainer />
                 <h3 className='booking-price'>&#36;{rental.dailyRate} <span className='booking-per-night'>per night</span></h3>
                 <hr></hr>
                 <div className='form-group'>
@@ -83,14 +159,16 @@ export class Booking extends React.Component {
                 </div>
                 <div className='form-group'>
                     <label htmlFor='guests'>Guests</label>
-                    <input onChange={this.selectGuests} type='number' className='form-control' id='guests' aria-describedby='emailHelp' placeholder=''></input>
+                    <input onChange={(event) => {this.selectGuests(event)}} value={guests} type='number' className='form-control' id='guests' aria-describedby='emailHelp' placeholder=''></input>
                 </div>
-                <button onClick={() => {this.reserveBooking(this.state.startAt, this.state.endAt)}} className='btn btn-bwm btn-confirm btn-block'>Reserve place now</button>
+                <button disabled={!startAt || !endAt || !guests} onClick={() => {this.reserveBooking()}} className='btn btn-bwm btn-confirm btn-block'>Reserve place now</button>
                 <hr></hr>
                 <p className='booking-note-title'>People are interested into this house</p>
                 <p className='booking-note-text'>
                     More than 500 people checked this rental in last month.
                 </p>
+                <BookingModal errors={this.state.error} open={this.state.modal.open} closeModal={this.cancelBooking} booking={this.state.proposedBooking}
+                confirmModal={this.reserveRental} rentalPrice={this.props.rental.dailyRate}/>
             </div>
         )
     }

@@ -4,7 +4,9 @@ import {
     FETCH_RENTALS_SUCCESS,
     LOGIN_FAILURE,
     LOGIN_SUCCESS,
-    LOGOUT
+    LOGOUT,
+    FETCH_RENTAL_INIT,
+    FETCH_RENTAL_FAIL
 } from './types';
 import axios from 'axios';
 import authService from '../services/auth-service';
@@ -12,14 +14,33 @@ import axiosService from '../services/axios-service';
 
 const axiosInstance = axiosService.getInstance();
 
+const fetchRentalsInit = () => {
+    return {
+        type: FETCH_RENTAL_INIT
+    }
+};
 
-export const fetchRentals = () => {
+const fetchRentalsFail = (errors) => {
+    return {
+        type: FETCH_RENTAL_FAIL,
+        errors
+    }
+};
+
+
+export const fetchRentals = (city) => {
+
+    const url = city ? `/rentals?city=${city}` : '/rentals';
     return function(dispatch){
-
+        dispatch(fetchRentalsInit());
         // send request to server
-        axiosInstance.get('/rentals').then((rentals)=>{
+        axiosInstance.get(url)
+            .then((rentals)=>{
             dispatch(fetchRentalsSuccess(rentals.data));
-        });
+        })
+            .catch((err)=>{
+                dispatch(fetchRentalsFail(err.response.data.errors));
+            });
     }
 
 };

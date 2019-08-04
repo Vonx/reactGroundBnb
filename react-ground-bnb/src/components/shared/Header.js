@@ -2,6 +2,8 @@ import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import {connect} from "react-redux";
 import * as actions from "../../actions";
+import authService from "../../services/auth-service";
+import RentalSearchInput from "../rental/RentalSearchInput";
 
 
 class Header extends React.Component {
@@ -21,7 +23,18 @@ class Header extends React.Component {
         if(isAuth){
 
             return <div className='navbar-nav ml-auto clickable'>
-                <a className='nav-item nav-link' onClick={()=>{this.logoutUser()}}>Logout</a>
+                <Link className='nav-item nav-link' to="/rentals">Welcome, {authService.getUserName()}</Link>
+                <div className="nav-item dropdown">
+                    <a className="nav-link nav-item dropdown-toggle clickable" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Owner Section
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <Link className="dropdown-item" to="/rentals/new">Create Rental</Link>
+                        <Link className="dropdown-item" to="#">Manage Rentals</Link>
+                        <Link className="dropdown-item" to="#">Manage Bookings</Link>
+                    </div>
+                </div>
+                <a className='nav-item nav-link clickable' onClick={()=>{this.logoutUser()}}>Logout</a>
             </div>
 
         }
@@ -38,10 +51,7 @@ class Header extends React.Component {
             <nav className='navbar navbar-dark navbar-expand-lg'>
                 <div className='container'>
                     <Link className='navbar-brand' to='/rentals'>BookWithMe</Link>
-                    <form className='form-inline my-2 my-lg-0'>
-                        <input className='form-control mr-sm-2 bwm-search' type='search' placeholder='Try New York' aria-label='Search'></input>
-                        <button className='btn btn-outline-success my-2 my-sm-0 btn-bwm-search' type='submit'>Search</button>
-                    </form>
+                    <RentalSearchInput/>
                     <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon'></span>
                     </button>

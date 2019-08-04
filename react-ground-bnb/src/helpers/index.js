@@ -26,3 +26,8 @@ export const getRangeOfDates = (startAt, endAt, dateFormat) => {
     return tempDate;
 
 };
+
+export const getUserName = (username) => {
+
+    return username;
+};

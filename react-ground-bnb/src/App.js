@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import { Provider }from 'react-redux';
 import Header from './components/shared/Header';
 import Login from './components/login/Login';
@@ -11,6 +11,7 @@ import './App.css';
 import {ProtectedRoute} from "./components/shared/auth/ProtectedRoute";
 import * as actions from 'actions';
 import {LoggedInRoute} from "./components/shared/auth/LoggedInRoute";
+import {RentalCreate} from "./components/rental/rental-create/RentalCreate";
 
 
 const store = require('./reducers').init();
@@ -30,12 +31,15 @@ class App extends Component {
               <div className='App'>
                   <Header />
                   <div className='container'>
+                      <Switch>
                       <Route exact path='/' render={() => {return <Redirect to='/rentals'/>}}/>
                       <Route exact path='/rentals' component={RentalListing}/>
                       <Route exact path='/login' component={Login}/>
                       <Route exact path='/rentals/:city/homes' component={RentalSearch}/>
                       <LoggedInRoute exact path='/register' component={Register}/>
+                      <ProtectedRoute exact path='/rentals/new' component={RentalCreate}/>
                       <ProtectedRoute exact path='/rentals/:id' component={RentalDetail}/>
+                      </Switch>
 
                   </div>
               </div>

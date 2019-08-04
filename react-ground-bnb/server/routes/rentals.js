@@ -50,10 +50,6 @@ router.post('', userController.authMiddleware, function(req, res){
     const {title, city, street, category, image, bedrooms, shared, description, dailyRate} = req.body;
     const user = res.locals.user;
 
-    if(!title || !city || !street || !category || !image || !bedrooms || !shared || !description || !dailyRate){
-        return res.status(422).send({errors: [{title: 'Missing Data', detail: 'Provide all required fields'}]});
-    }
-
     const rental = new Rental({title, city, street, category, image, bedrooms, shared, description, dailyRate});
     rental.user = user;
 

@@ -14,7 +14,6 @@ class Login extends React.Component {
     }
 
     loginUser(userData){
-        debugger;
 
         this.props.dispatch(actions.login(userData));
     }

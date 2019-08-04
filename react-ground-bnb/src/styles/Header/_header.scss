@@ -35,4 +35,16 @@
   .nav-item {
     color: $main-white-color;
   }
+  .dropdown-menu {
+
+    .dropdown-item {
+      font-size: 13px;
+      &:hover{
+        background-color: transparent !important;
+        color: $main-text-gray-color !important;
+      }
+
+    }
+  }
+
 }

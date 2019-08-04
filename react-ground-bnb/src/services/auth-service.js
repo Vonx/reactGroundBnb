@@ -6,6 +6,7 @@ class authService {
     TOKEN_NAME = 'auth_token';
 
     getToken() {
+        debugger;
         return localStorage.getItem(this.TOKEN_NAME);
     }
 
@@ -24,6 +25,10 @@ class authService {
     invalidateToken(){
         localStorage.removeItem(this.TOKEN_NAME);
 
+    }
+
+    getUserName(){
+        return jwt.decode(this.getToken()).username;
     }
 
     isValid(token){

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../../actions/index';
 import {RentalList} from "./RentalList";
+import {toUpperCase} from "../../../helpers";
 
 class RentalSearch extends React.Component {
 
@@ -15,22 +16,31 @@ class RentalSearch extends React.Component {
     }
 
     componentWillMount() {
+        this.searchRentalByCity();
+    }
+
+    searchRentalByCity(){
         const city = this.props.match.params.city;
         console.log(city);
         this.setState({city});
         this.props.dispatch(actions.fetchRentals(city));
     }
 
+    componentDidUpdate(prevProps) {
+        if(prevProps.match.params.city !== this.props.match.params.city){
+            this.searchRentalByCity()
+        }
+    }
+
     renderTitle(){
         const {errors, data} = this.props.rentals;
-        const {city} = this.state;
         let title = '';
 
         if(errors.length > 0){
           title = errors[0].detail;
         }
         if(data.length > 0){
-            title = `Your Home in ${this.state.city}`;
+            title = `Your Home in ${toUpperCase(this.state.city)}`;
         }
 
         return <h1 className="page-title">{title}</h1>

@@ -142,3 +142,11 @@ export const createBooking = (booking) => {
         return Promise.reject(err.response.data.errors);
     })
 };
+
+export const createRental = (rentalData) => {
+    return axiosInstance.post('/rentals', rentalData).then((res)=> {
+        return res.data;
+    }).catch((errors)=>{
+        return Promise.reject(errors.response.data.errors);
+    })
+};

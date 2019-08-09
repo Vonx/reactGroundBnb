@@ -31,6 +31,24 @@ router.get('', function(req, res){
 
 });
 
+
+router.get('/manage', userController.authMiddleware, function(req, res){
+    const user = res.locals.user;
+
+    Rental.where({user})
+        .populate('bookings')
+        .exec(function(err, userOwnedRentals){
+
+            if (err){
+                console.log('err thrownn');
+                return res.status(422).send({errors: normalizeErrors(err.errors)});
+            }
+
+            return res.json(userOwnedRentals);
+        });
+
+});
+
 router.get('/:id', function(req, res){
     const rentalId = req.params.id;
 
@@ -44,6 +62,39 @@ router.get('/:id', function(req, res){
                return res.json(foundRental);
         })
 
+});
+
+router.delete('/:id', userController.authMiddleware, function(req, res){
+    const rentalId = req.params.id;
+    const user = res.locals.user;
+
+    Rental.findById(rentalId)
+        .populate('user', '_id')
+        .populate({
+            path: 'bookings',
+            select: 'startAt',
+            match: {startAt: {$gt: new Date()}}
+        })
+        .exec((err, foundRental)=>{
+            if(err){
+                return res.status(422).send({errors: normalizeErrors(err.errors)});
+            }
+            if(foundRental.user.id !== user.id){
+
+                return res.status(422).send({errors: [{title: 'error', detail: 'you are not permitted to delete this rental'}]});
+            }
+            if(foundRental.bookings.length > 0){
+                return res.status(422).send({errors: [{title: 'Error: Active bookings', detail: 'cannot delete rental with active bookings'}]});
+
+            }
+            foundRental.remove((err)=>{
+                console.log('got to delete area');
+                if(err){
+                    return res.status(422).send({errors: normalizeErrors(err.errors)});
+                }
+                return res.json({"status": "deleted"})
+            })
+        })
 });
 
 router.post('', userController.authMiddleware, function(req, res){

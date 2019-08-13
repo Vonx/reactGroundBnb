@@ -6,7 +6,10 @@ import {
     LOGIN_SUCCESS,
     LOGOUT,
     FETCH_RENTAL_INIT,
-    FETCH_RENTAL_FAIL
+    FETCH_RENTAL_FAIL,
+    FETCH_BOOKINGS_SUCCESS,
+    FETCH_BOOKINGS_FAIL,
+    FETCH_BOOKINGS_INIT
 } from './types';
 import axios from 'axios';
 import authService from '../services/auth-service';
@@ -141,6 +144,46 @@ export const createBooking = (booking) => {
     }).catch((err)=>{
         return Promise.reject(err.response.data.errors);
     })
+};
+
+const fetchBookingsInit = () => {
+    return {
+        type: FETCH_BOOKINGS_INIT
+    }
+};
+
+const fetchBookingsFail = (errors) => {
+    return {
+        type: FETCH_BOOKINGS_FAIL,
+        errors
+    }
+};
+
+const fetchBookingsSuccess = (bookings) => {
+
+    return {
+        type: FETCH_BOOKINGS_SUCCESS,
+        bookings
+    }
+
+};
+
+export const fetchBookings = () => {
+
+
+    return function(dispatch){
+        dispatch(fetchBookingsInit());
+        // send request to server
+        axiosInstance.get('/bookings/manage').then((res)=>{return res.data})
+            .then((bookings)=>{
+                console.log('success');
+                dispatch(fetchBookingsSuccess(bookings));
+            })
+            .catch((err)=>{
+                dispatch(fetchBookingsFail(err.response.data.errors));
+            });
+    }
+
 };
 
 export const createRental = (rentalData) => {

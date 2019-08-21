@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {pretifyDate, toUpperCase} from "../../../helpers";
+import {pretifyDate} from "../../../helpers";
 import Modal from "react-responsive-modal";
-import * as actions from "../../../actions";
+
 import {DisplayError} from "../../shared/form/displayError";
-import { ToastContainer, toast } from 'react-toastify';
+
 
 export default class RentalManageCard extends React.Component{
     constructor() {

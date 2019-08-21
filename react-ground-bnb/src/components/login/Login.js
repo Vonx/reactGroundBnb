@@ -38,7 +38,7 @@ class Login extends React.Component {
                     </div>
                     <div className="col-md-6 ml-auto">
                         <div className="image-container">
-                            <h2 className="catchphrase">Hundreds of awesome places in reach of few clicks.</h2>
+                            <h2 className="catchphrase">Hundreds of amazing places are a only a couple clicks away.</h2>
                             <img src={process.env.PUBLIC_URL + '/image/login-image.jpg'} alt=""/>
                         </div>
                     </div>

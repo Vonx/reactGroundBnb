@@ -37,7 +37,7 @@ class BookingManage extends React.Component {
                             className="loadingImage" src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
                     </div>
                     {bookings.data.length === 0 && !bookings.isFetching && <div className='alert alert-warning'>
-                        You have no bookings created go to rentals section and book your place today.
+                        You have no bookings created. Visit the rentals page and book your place today.
                         <Link style={{'marginLeft': '10px'}} className='btn btn-bwm' to='/rentals'>Available
                             Rental</Link>
                     </div>}

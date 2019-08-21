@@ -4,7 +4,6 @@ import * as actions from '../../../actions/index';
 import {RentalDetailInfo } from './RentalDetailInfo';
 import {RentalMap} from "./RentalMap";
 import {Booking} from "../../booking/Booking";
-import authService from "../../../services/auth-service";
 import {Link} from "react-router-dom";
 
 class RentalDetail extends React.Component {

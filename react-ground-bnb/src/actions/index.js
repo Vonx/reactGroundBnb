@@ -186,8 +186,23 @@ export const fetchBookings = () => {
 
 };
 
+export const fetchUserRentals = () => {
+        return axiosInstance.get('/rentals/manage').then((res)=>{return res.data},
+            (err)=>{
+                return Promise.reject(err.response.data.errors);
+            });
+};
+
 export const createRental = (rentalData) => {
     return axiosInstance.post('/rentals', rentalData).then((res)=> {
+        return res.data;
+    }).catch((errors)=>{
+        return Promise.reject(errors.response.data.errors);
+    })
+};
+
+export const deleteRental = (rentalId) => {
+    return axiosInstance.delete(`/rentals/${rentalId}`).then((res)=> {
         return res.data;
     }).catch((errors)=>{
         return Promise.reject(errors.response.data.errors);

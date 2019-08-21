@@ -147,7 +147,7 @@ export class Booking extends React.Component {
         const {startAt, endAt, guests} = this.state.proposedBooking;
         return (
 
-            <div className='booking'>
+            <div>
                 <ToastContainer />
                 <h3 className='booking-price'>&#36;{rental.dailyRate} <span className='booking-per-night'>per night</span></h3>
                 <hr></hr>

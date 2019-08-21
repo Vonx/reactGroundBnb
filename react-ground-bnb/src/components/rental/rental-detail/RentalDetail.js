@@ -4,6 +4,8 @@ import * as actions from '../../../actions/index';
 import {RentalDetailInfo } from './RentalDetailInfo';
 import {RentalMap} from "./RentalMap";
 import {Booking} from "../../booking/Booking";
+import authService from "../../../services/auth-service";
+import {Link} from "react-router-dom";
 
 class RentalDetail extends React.Component {
 
@@ -16,7 +18,7 @@ class RentalDetail extends React.Component {
     }
 
     render(){
-        const rental = this.props.rental;
+        const {rental, auth: {isAuth}} = this.props;
 
         if(rental._id) {
             return (
@@ -35,10 +37,16 @@ class RentalDetail extends React.Component {
                     <div className='details-section'>
                         <div className='row'>
                             <div className='col-md-8'>
+                                <h2 className='rental-city'>Owner: {rental.user && rental.user.username}</h2>
                                <RentalDetailInfo rental={rental} />
                             </div>
                             <div className='col-md-4'>
-                            <Booking rental={rental}/>
+                                <div className='booking'>
+
+                                    {isAuth ? <Booking rental={rental}/> : <div className="text-center">Interested in staying here? Make a booking today by logging in<br /><br />
+                                        <Link className="loginButton" to='/login'>Login <span className='sr-only'>(current)</span></Link></div>}
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -57,7 +65,8 @@ class RentalDetail extends React.Component {
 function mapStateToProps(state){
 
     return {
-        rental: state.rental.data
+        rental: state.rental.data,
+        auth: state.auth
     }
 }
 

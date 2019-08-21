@@ -27,6 +27,10 @@ export const getRangeOfDates = (startAt, endAt, dateFormat) => {
 
 };
 
+export const pretifyDate = (date) => {
+    return moment(date).format("MMM Do YY");
+};
+
 export const getUserName = (username) => {
 
     return username;

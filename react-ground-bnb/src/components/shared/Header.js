@@ -3,7 +3,7 @@ import {Link, withRouter} from 'react-router-dom';
 import {connect} from "react-redux";
 import * as actions from "../../actions";
 import authService from "../../services/auth-service";
-import RentalSearchInput from "../rental/RentalSearchInput";
+import RentalSearchInput from "../rental/rental-listing/RentalSearchInput";
 
 
 class Header extends React.Component {

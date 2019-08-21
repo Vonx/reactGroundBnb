@@ -6,7 +6,6 @@ class authService {
     TOKEN_NAME = 'auth_token';
 
     getToken() {
-        debugger;
         return localStorage.getItem(this.TOKEN_NAME);
     }
 

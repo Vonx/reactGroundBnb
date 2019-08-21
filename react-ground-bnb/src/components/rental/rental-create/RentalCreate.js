@@ -11,7 +11,7 @@ export class RentalCreate extends React.Component {
             errors: []
         };
 
-        this.rentalCategories = ['Home', 'Apartment', 'Condo'];
+        this.rentalCategories = ['House', 'Apartment', 'Condo'];
         this.submitRental = this.submitRental.bind(this);
     }
 

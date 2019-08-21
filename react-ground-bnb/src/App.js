@@ -7,7 +7,7 @@ import Register from './components/register/Register';
 import RentalListing from './components/rental/rental-listing/RentalListing';
 import RentalSearch from './components/rental/rental-listing/RentalSearch';
 import RentalDetail from './components/rental/rental-detail/RentalDetail';
-import RentalManage from "./components/rental/RentalManage";
+import RentalManage from "./components/rental/rental-listing/RentalManage";
 import BookingManage from "./components/booking/BookingManage";
 import './App.css';
 import {ProtectedRoute} from "./components/shared/auth/ProtectedRoute";
@@ -42,7 +42,7 @@ class App extends Component {
                       <ProtectedRoute exact path='/bookings/manage' component={BookingManage}/>
                       <LoggedInRoute exact path='/register' component={Register}/>
                       <ProtectedRoute exact path='/rentals/new' component={RentalCreate}/>
-                      <ProtectedRoute exact path='/rentals/:id' component={RentalDetail}/>
+                      <Route exact path='/rentals/:id' component={RentalDetail}/>
                       </Switch>
 
                   </div>

@@ -7,6 +7,16 @@
     margin-bottom: 30px;
   }
 
+  .loginButton {
+
+    text-decoration: none;
+    background-color: #5cb85c;
+    border-radius: 7px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+  }
+
   .details-section {
     color: $main-text-gray-color;
     .rental {

@@ -26,15 +26,14 @@ class BookingManage extends React.Component {
         const {bookings} = this.props;
         return (
             <div>
-
+                {bookings.isFetching && <div
+                    className="theImageContainer"><img
+                    alt='Loading..'
+                    className="loadingImage" src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
                 <section id='userBookings'>
                     <h1 className='page-title'>My Bookings</h1>
                     <div className='row'>
                         {!bookings.isFetching && this.renderBookings()}
-                        {bookings.isFetching && <div
-                            className="theImageContainer"><img
-                            alt='Loading..'
-                            className="loadingImage" src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
                     </div>
                     {bookings.data.length === 0 && !bookings.isFetching && <div className='alert alert-warning'>
                         You have no bookings created. Visit the rentals page and book your place today.

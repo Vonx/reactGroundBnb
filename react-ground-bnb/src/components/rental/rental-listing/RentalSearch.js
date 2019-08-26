@@ -48,9 +48,11 @@ class RentalSearch extends React.Component {
 
     render() {
         return (
-            <section id="rentalListing">
+            <section className="rentalListing">
                 {this.renderTitle()}
+                <div className="rentalContainer">
                 <RentalList rentals={this.props.rentals.data} />
+                </div>
             </section>
         )
     }

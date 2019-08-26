@@ -23,7 +23,7 @@ router.get('', function(req, res){
                 }
 
                 if(city && foundRentals.length === 0) {
-                    return res.status(422).send({errors: [{title: 'No rentals found', detail: 'Could not find a rental in this location'}]});
+                    return res.status(422).send({errors: [{title: 'No rentals found', detail: 'No rentals available in this location'}]});
                 }
 
                 return res.json(foundRentals);

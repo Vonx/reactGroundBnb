@@ -54,7 +54,7 @@ return function(dispatch){
     // send request to server
     dispatch(fetchRentalByIdInit());
 
-    axios.get(`http://localhost:3000/api/v1/rentals/${rentalId}`).then((rental)=>{
+    axios.get(`/api/v1/rentals/${rentalId}`).then((rental)=>{
         dispatch(fetchRentalByIdSuccess(rental.data));
     });
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import {withRouter} from "react-router-dom";
+import {goToAnchor} from 'react-scrollable-anchor';
+import RentalListing from './RentalListing';
 
 class RentalSearchInput extends React.Component {
 
@@ -19,7 +21,13 @@ class RentalSearchInput extends React.Component {
         const {history} = this.props;
         const city = this.searchInput.current.value;
 
-        city ? history.push(`/rentals/${city}/homes`) : history.push(`/rentals`);
+        if(city) {
+            history.push(`/rentals/${city}/homes`);
+            goToAnchor('section2');
+        }
+        else{
+            history.push(`/rentals`);
+        }
     }
 
     render(){

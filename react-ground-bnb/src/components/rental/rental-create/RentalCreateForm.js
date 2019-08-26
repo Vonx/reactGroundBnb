@@ -4,7 +4,7 @@ import {bwmTextArea, bwmSelect, formInput} from '../../shared/form/bwmSelect';
 import {bwmFileUpload} from "../../shared/form/bwmFileUpload";
 
 import {DisplayError} from '../../shared/form/displayError';
-import {required, minLength4} from '../../shared/form/validators';
+import {required, minLength4, isNum} from '../../shared/form/validators';
 
 const RentalCreateForm = props => {
     const { handleSubmit, pristine, submitting, submitRentalCb, valid, rentalCategories, errors} = props;
@@ -57,7 +57,7 @@ const RentalCreateForm = props => {
                 rows="1"
                 className="form-control"
                 component={formInput}
-                validate={[required]}
+                validate={[required, isNum]}
             />
             <Field
                 name="shared"
@@ -73,14 +73,14 @@ const RentalCreateForm = props => {
                 symbol='$'
                 className="form-control"
                 component={formInput}
-                validate={[required]}
+                validate={[required, isNum]}
             />
             <Field
                 name="image"
                 label="Image"
                 component={bwmFileUpload}
             />
-            <button className="btn btn-success" type="submit" disabled={!valid || pristine || submitting}>
+            <button className="btn btn-bwm" type="submit" disabled={!valid || pristine || submitting}>
                 Create Rental
             </button>
             <DisplayError errors={errors} />

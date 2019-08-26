@@ -1,8 +1,16 @@
-#rentalListing {
+.rentalListing {
+  margin: 2%;
+  position: relative;
+
   .title {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rentalContainer {
+    margin-top: 40px;
+
   }
 
   /* SINGLE CARD STYLES*/
@@ -15,6 +23,7 @@
 
   .bwm-card {
     border: none;
+    margin-bottom: 20px;
 
     .card-block {
       padding-top: 8px;

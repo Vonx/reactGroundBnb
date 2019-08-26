@@ -1,7 +1,12 @@
+
 .navbar {
-  padding: 20px;
-  margin-bottom: 40px;
-  background-color: $main-black-color;
+  padding: 10px;
+  background-color: transparent;
+  font-family: Helvetica, sans-serif;
+  box-shadow: none !important;
+  position: relative;
+  top: 0;
+  height:145px;
 
   .bwm-search {
     height: 50px;
@@ -10,41 +15,65 @@
 
   .navbar-brand {
     margin-right: 30px;
-    font-size: 27px;
-    letter-spacing: 1px;
-    color: $main-color !important;
-    font-weight: 500;
   }
 
-  .nav-item {
-    font-size: 14px;
-  }
-
-  .btn-bwm-search {
-    border-color: $main-color;
-    color: $main-color;
+  .blackLogo{
+    left: 0;
+    height: 10vh;
+    width: 10vh;
+    filter:brightness(0%);
+    -webkit-transition: 0.5s;
 
     &:hover, &:focus, &:active {
-      background-color: transparent !important;
-      border-color: $main-color !important;
-      color: $main-color !important;
-      box-shadow: none;
+      filter:brightness(85%);
+      -webkit-transition: 0.5s;
     }
   }
 
-  .nav-item {
-    color: $main-white-color;
-  }
-  .dropdown-menu {
+  .navContainer {
+    margin-left: 10vh !important;
 
+  }
+
+  .nav-item {
+    font-family: Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: black !important;
+    font-weight: 600;
+    border-bottom: 2px solid;
+    border-color: transparent;
+
+    &:hover, &:focus {
+      border-color: black;
+      outline: none !important;
+    }
+  }
+
+
+  .btn-bwm-search {
+    border-color: black !important;
+    color: black !important;
+
+
+    &:hover, &:focus, &:active {
+      background-color: mintcream !important;
+      border-color: black !important;
+      color: black !important;
+    }
+  }
+
+  .dropdown-menu {
     .dropdown-item {
       font-size: 13px;
+      position: relative;
+
       &:hover{
-        background-color: transparent !important;
-        color: $main-text-gray-color !important;
+        border-color: transparent;
+
       }
 
     }
   }
-
 }

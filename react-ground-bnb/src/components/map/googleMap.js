@@ -106,7 +106,7 @@ function MapComponent(props){
         {isLocationLoaded && !isError &&
         <Circle center={coordinates} radius={500} />}
         {isLocationLoaded && isError &&
-        <InfoWindow position={coordinates} options={{maxWidth: 300}}>
+        <InfoWindow position={coordinates} options={{maxWidth: 500}}>
             <div>We couldn't find the location you specified, please check the spelling and try again
             </div>
         </InfoWindow>}

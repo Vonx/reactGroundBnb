@@ -12,9 +12,11 @@ class RentalListing extends React.Component {
 
   render() {
     return (
-      <section id="rentalListing">
+      <section className="rentalListing">
         <h1 className="page-title">Your Home All Around the World</h1>
-        <RentalList rentals={this.props.rentals} />
+        <div className="rentalContainer">
+          <RentalList rentals={this.props.rentals} />
+        </div>
       </section>
     )
   }

@@ -6,6 +6,55 @@
 @import 'booking/booking.scss';
 @import 'rental/rental-manage.scss';
 
+.pageContainer{
+  min-height: 100vh;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  position: relative;
+  width: 100%;
+  z-index:0;
+}
+
+.theAni {
+  z-index: 9;
+}
+
+.navBoxContainer {
+  height: 145px;
+}
+
+.searchCard {
+  position: absolute;
+  top: 25vh;
+  left: 20vh;
+  font-family: Helvetica, sans-serif;
+  padding: 30px;
+}
+
+.searchTitle{
+  font-size: 27px;
+  font-weight: 600;
+
+}
+
+.cardWide {
+  width: 500px;
+}
+
+.searchbody{
+  padding: 30px;
+
+}
+
+.topHeader {
+  height:100vh;
+  min-height:100px;
+  background-size:cover;
+  position: relative;
+}
+
 .clickable {
   a:hover {
   cursor: pointer;
@@ -16,6 +65,12 @@
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.topImage {
+  width: 100%;
+  height: 100vh;
+
 }
 
 .apartment {
@@ -42,16 +97,18 @@
   &:hover, &:focus, &:active {
 
     border-color: $main-color !important;
+    color: black !important;
     background-color: $main-color !important;
   }
 }
 
 .theImageContainer {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 50vw;
+  vertical-align: middle;
+
 }
 
 .theImageContainer img {

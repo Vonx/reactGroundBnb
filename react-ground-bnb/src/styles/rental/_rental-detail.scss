@@ -1,4 +1,10 @@
 #rentalDetails {
+
+  .rentalImage {
+    width: 50vw;
+    height: 47vh;
+    margin-bottom: 10px;
+  }
   .upper-section {
     img {
       width: 100%;
@@ -18,7 +24,10 @@
   }
 
   .details-section {
+    padding-left: 18vh;
+    padding-right: 18vh;
     color: $main-text-gray-color;
+
     .rental {
       &-type {
         font-size: 14px;
@@ -51,6 +60,16 @@
         i {
           margin-right: 2px;
         }
+      }
+
+      .rentalDetailCategory {
+       margin-top: 3vh;
+        font-weight: 500;
+        margin-bottom: 1vh;
+
+      }
+
+      .rentalDetailCategoryInfo {
       }
 
       &-description {

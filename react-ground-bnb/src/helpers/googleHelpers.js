@@ -1,0 +1,1 @@
+export const googleApi = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCXB0ipw9nFf3GUqdNmHel8N2lDXeqUT1w&libraries=geometry,drawing,places";

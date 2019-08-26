@@ -1,7 +1,6 @@
 const User = require('../models/user');
 const {normalizeErrors} = require('../helpers/mongoose');
 const jwt = require('jsonwebtoken');
-const config = require('../config/def');
 const Booking = require('../models/booking');
 const Rental = require('../models/rental');
 const moment = require('moment');

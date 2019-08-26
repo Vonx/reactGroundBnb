@@ -25,7 +25,7 @@ class RentalDetail extends React.Component {
                     <div className='upper-section'>
                         <div className='row'>
                             <div className='col-md-6'>
-                                <img src={rental.image} alt=''></img>
+                                <img className="rentalImage" src={rental.image} alt=''/>
                             </div>
                             <div className='col-md-6'>
                             <RentalMap location={`${rental.city}, ${rental.street}`}/>
@@ -36,7 +36,7 @@ class RentalDetail extends React.Component {
                     <div className='details-section'>
                         <div className='row'>
                             <div className='col-md-8'>
-                                <h2 className='rental-city'>Owner: {rental.user && rental.user.username}</h2>
+                                <h2 className='rental-city'>Hosted by {rental.user && rental.user.username}</h2>
                                <RentalDetailInfo rental={rental} />
                             </div>
                             <div className='col-md-4'>
@@ -55,7 +55,7 @@ class RentalDetail extends React.Component {
         }
         else{
             return (
-                <div>Loading..</div>
+                <div className="theImageContainer"><img alt='Loading..' src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>
             )
         }
     }

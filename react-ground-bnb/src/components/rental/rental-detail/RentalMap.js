@@ -1,6 +1,6 @@
 import React from 'react';
 import {MapWithGeocode} from "../../map/googleMap";
-import {googleApi} from '../../../helpers/googleHelpers';
+import {googleApi} from '../../../helpers/googleHelpers.js';
 
 export class RentalMap extends React.Component {
 

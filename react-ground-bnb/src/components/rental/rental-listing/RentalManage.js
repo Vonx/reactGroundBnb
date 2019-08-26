@@ -57,6 +57,7 @@ export default class RentalManage extends React.Component {
     render(){
         const {userRentals, fetchErrors, isFetching, deleteErrors} = this.state;
         return (<div>
+            {isFetching && <div className="theImageContainer"><img alt='Loading..' src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
             {fetchErrors.length > 0 && fetchErrors.map((err, index) => {
                 return <p key={index}>{err.title}</p>
             })}
@@ -71,7 +72,6 @@ export default class RentalManage extends React.Component {
                                                      errors={deleteErrors}
                                                      />
                         })}
-                        {isFetching && <div className="theImageContainer"><img alt='Loading..' src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
                     </div>
                 {userRentals.length === 0 && !isFetching && <div className='alert alert-warning'>
                 You dont have any rentals currenty created. If you want to advertise your property

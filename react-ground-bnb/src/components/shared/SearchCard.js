@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import RentalSearchInput from "../rental/rental-listing/RentalSearchInput";
+import {goToAnchor} from 'react-scrollable-anchor';
 
-export function SearchCard(props) {
-    const {booking, index} = props;
-
+export function SearchCard() {
     return (
         <div className='searchCard col-md-4 position-absolute'>
             <div className='card cardWide searchbody'>
@@ -13,12 +11,15 @@ export function SearchCard(props) {
                 </div>
                 <div className='card-block'>
                     <br />
-                    <p>Where</p>
+                    <p>See what's available across the world</p>
+                    <button className='btn btn-outline-primary my-2 my-sm-0 btn-bwm-search' onClick={()=>{goToAnchor('section2')}}>Explore</button>
+                </div>
+                <div className='card-block'>
+                    <br />
+                    <p>Book unique homes and experiences</p>
                     <RentalSearchInput />
                 </div>
-                <div>
-                   idk
-                </div>
+
             </div>
         </div>
     )

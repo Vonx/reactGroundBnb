@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import { Provider }from 'react-redux';
-import Header from './components/shared/Header';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
 import RentalListing from './components/rental/rental-listing/RentalListing';
@@ -17,8 +16,6 @@ import {RentalCreate} from "./components/rental/rental-create/RentalCreate";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import {removeHash, goToAnchor, configureAnchors} from 'react-scrollable-anchor';
 import {ViewportBlock} from "./components/shared/ViewportBlock";
-import { MDBAnimation } from "mdbreact";
-import handleViewport from 'react-in-viewport';
 import {AnimHeader} from "./components/shared/Fade";
 import {SearchCard} from "./components/shared/SearchCard";
 

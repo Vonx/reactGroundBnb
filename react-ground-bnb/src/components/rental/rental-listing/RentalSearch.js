@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../../actions/index';
 import {RentalList} from "./RentalList";
 import {toUpperCase} from "../../../helpers";
+import {Link} from 'react-router-dom';
 
 class RentalSearch extends React.Component {
 
@@ -47,11 +48,13 @@ class RentalSearch extends React.Component {
         }
 
     render() {
+        const {errors} = this.props.rentals;
         return (
             <section className="rentalListing">
                 {this.renderTitle()}
                 <div className="rentalContainer">
                 <RentalList rentals={this.props.rentals.data} />
+                    {errors.length > 0 && <p>Want to check out some other popular places? <Link to='/rentals'><button className='btn btn-outline-success my-2 my-sm-0 btn-bwm-search'>EXplore</button></Link></p>}
                 </div>
             </section>
         )

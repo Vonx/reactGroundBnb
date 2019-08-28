@@ -4,8 +4,6 @@ import {connect} from "react-redux";
 import * as actions from "../../actions";
 import authService from "../../services/auth-service";
 import RentalSearchInput from "../rental/rental-listing/RentalSearchInput";
-import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
-
 
 class Header extends React.Component {
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import {withRouter} from "react-router-dom";
 import {goToAnchor} from 'react-scrollable-anchor';
-import RentalListing from './RentalListing';
 
 class RentalSearchInput extends React.Component {
 
@@ -33,7 +32,7 @@ class RentalSearchInput extends React.Component {
     render(){
 
         return (
-            <div className='form-inline my-2 my-lg-0'>
+            <div className='form-inline my-2 my-md-0'>
                 <input onKeyPress={(event)=>{this.handleKeyPress(event)}}
                     ref={this.searchInput}
                        className='form-control mr-sm-2 bwm-search'

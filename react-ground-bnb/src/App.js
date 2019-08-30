@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect, Switch, Link} from 'react-router-dom';
 import { Provider }from 'react-redux';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
@@ -16,8 +16,12 @@ import {RentalCreate} from "./components/rental/rental-create/RentalCreate";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import {removeHash, goToAnchor, configureAnchors} from 'react-scrollable-anchor';
 import {ViewportBlock} from "./components/shared/ViewportBlock";
-import {AnimHeader} from "./components/shared/Fade";
+import {AnimHeader} from "./components/shared/AnimHeader";
 import {SearchCard} from "./components/shared/SearchCard";
+import Media from 'react-media';
+import Header from "./components/shared/Header";
+import RentalSearchInput from "./components/rental/rental-listing/RentalSearchInput";
+
 
 
 
@@ -43,7 +47,6 @@ class App extends Component {
         this.setState({displayStarterImage: false});
     }
 
-
     render() {
         const {displayTopNav, displayStarterImage} = this.state;
         configureAnchors({keepLastAnchorHash: true});
@@ -51,26 +54,42 @@ class App extends Component {
         <Provider store={store}>
             <BrowserRouter>
                 <div className='App'>
-                    <div>
-                        {displayStarterImage && <div className="theImageContainer"><img alt='Loading..' src={process.env.PUBLIC_URL + '/image/Infinity-1.1s-105px.gif'}/></div>}
                         <ScrollableAnchor id={'section1'}>
-                            <div>
-                                    <div className="topHeader">
-                                        <div onClick={()=>{goToAnchor('section2');
-                                        }}>
-                                            {displayTopNav && <AnimHeader positioning={'position-absolute'}/>}
-                                        </div>
-                                        <img className="topImage" src={process.env.PUBLIC_URL + '/image/waterImage.jpg'} alt=""/>
-                                    </div>
-                            <SearchCard/>
-                            </div>
+                                <Media query="(min-width: 768px)">
+                                    {matches =>
+                                        matches ? (
+                                            <div onClick={()=>{goToAnchor('section2')}}>
+                                            <div className="topHeader">
+                                                {displayTopNav && <AnimHeader displaySearch={false} displayAuth={false} positioning={'position-absolute'}/>}
+                                                <img className="topImage" src={process.env.PUBLIC_URL + '/image/waterImage.jpg'} alt=""/>
+                                            </div>
+                                            <SearchCard/>
+                                            </div>
+                                        ) : (
+                                            <AnimHeader displaySearch={false} size="navbar-expand-sm" img={true}/>
+                                        )
+                                    }
+                                </Media>
                         </ScrollableAnchor>
                         <a href='#section1' onClick={removeHash()}> .</a>
-                    </div>
+
                         <ScrollableAnchor id={'section2'}>
                             <div>
 
-                                <ViewportBlock component={AnimHeader} onEnterViewport={() => {removeHash(); this.setState({displayTopNav: false})}} onLeaveViewport={() => this.setState({displayTopNav: true})} />
+                                <Media query="(min-width: 768px)">
+                                    {matches =>
+                                        matches ? (
+                                            <ViewportBlock component={AnimHeader}
+                                                           onEnterViewport={() => {
+                                                               removeHash();
+                                                               this.setState({displayTopNav: false})}}
+                                                           onLeaveViewport={() =>
+                                                               this.setState({displayTopNav: true})}/>
+                                        ) : (
+                                            <RentalSearchInput />
+                                        )
+                                    }
+                                </Media>
                                 <div className='pageContainer'>
                                     <Switch>
                                         <Route exact path='/' render={() => {return <Redirect to='/rentals'/>}}/>

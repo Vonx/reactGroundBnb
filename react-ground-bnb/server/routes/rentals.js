@@ -98,10 +98,10 @@ router.delete('/:id', userController.authMiddleware, function(req, res){
 });
 
 router.post('', userController.authMiddleware, function(req, res){
-    const {title, city, street, category, image, bedrooms, shared, description, dailyRate} = req.body;
+    const {title, city, street, category, image, bedrooms, squareFootage, shared, description, dailyRate} = req.body;
     const user = res.locals.user;
 
-    const rental = new Rental({title, city, street, category, image, bedrooms, shared, description, dailyRate});
+    const rental = new Rental({title, city, street, category, image, bedrooms, squareFootage, shared, description, dailyRate});
     rental.user = user;
 
     Rental.create(rental, function(err, newRental){

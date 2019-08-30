@@ -30,6 +30,7 @@
     "react-dom": "^16.6.3",
     "react-google-maps": "^9.4.5",
     "react-in-viewport": "0.0.38",
+    "react-media": "^1.9.2",
     "react-redux": "^5.0.7",
     "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^4.3.1",

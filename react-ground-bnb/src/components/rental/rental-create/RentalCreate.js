@@ -19,9 +19,8 @@ export class RentalCreate extends React.Component {
         console.log(rentalData);
         actions.createRental(rentalData).then(
             (rental)=>{
-                console.log('new rental assigned' + rental);
                 this.setState({redirect: true});
-                console.log('created new rental')},
+                },
             (errors)=>{console.log(errors);
                 this.setState({errors: errors})
             });

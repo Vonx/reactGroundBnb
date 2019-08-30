@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import * as actions from "../../actions";
 import authService from "../../services/auth-service";
 import RentalSearchInput from "../rental/rental-listing/RentalSearchInput";
+import {goToAnchor} from 'react-scrollable-anchor';
 
 class Header extends React.Component {
 
@@ -25,7 +26,7 @@ class Header extends React.Component {
             return (<div><div className='navbar-nav ml-auto clickable'>
                 <Link className='nav-item nav-link' to="/rentals">Welcome, {authService.getUserName()}</Link>
                 {displayAuth && <div className="nav-item dropdown">
-                    <a className="nav-link nav-item dropdown-toggle clickable" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle clickable" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Owner Section
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -48,10 +49,31 @@ class Header extends React.Component {
         )
     }
     render() {
-        const {positioning, showSearch} = this.props;
+        const {positioning, showSearch, size} = this.props;
         return (
-            <nav className={`navbar navbar-dark navbar-expand-lg ${positioning} `}>
-                <div className='container'>
+            <nav className={`navbar navbar-light ${size} ${positioning}`}>
+                <Link className='navbar-brand' to='/rentals'>
+                    <img className="blackLogo" src={process.env.PUBLIC_URL + '/image/groundBnbLogoWhite.png'} alt=""/>
+                </Link>
+                {showSearch && <RentalSearchInput/>}
+                <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
+                    <span className='navbar-toggler-icon'></span>
+                </button>
+
+                <div className='collapse navbar-collapse ' id='navbarNavAltMarkup'>
+                    <div className="navContainer ml-auto">
+                        <div className='navbar-nav'>
+                            {this.renderAuthButtons()}
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        )
+    }
+/*    render() {
+        const {positioning, showSearch, size, navType} = this.props;
+        return (
+            <nav className={`${navType} navbar-light ${size} ${positioning}`}>
                     <Link className='navbar-brand' to='/rentals'>
                         <img className="blackLogo" src={process.env.PUBLIC_URL + '/image/groundBnbLogoWhite.png'} alt=""/>
                     </Link>
@@ -60,18 +82,16 @@ class Header extends React.Component {
                         <span className='navbar-toggler-icon'></span>
                     </button>
 
-                    <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-                        <div className="navContainer">
-                            <div className='navbar-nav navstyle '>
+                    <div className='collapse navbar-collapse ' id='navbarNavAltMarkup'>
+                        <div className="navContainer ml-auto">
+                            <div className='navbar-nav'>
                                 {this.renderAuthButtons()}
                             </div>
                         </div>
                     </div>
-                </div>
             </nav>
         )
-    }
-
+    }*/
 
 }
 

@@ -12,8 +12,9 @@ export function RentalDetailInfo (props) {
         <h2 className='rental-city'>{toUpperCase(rental.city)}</h2>
         <div className='rental-room-info'>
             <span><i className='fa fa-building'></i>{rental.bedrooms} bedrooms</span>
-            <span><i className='fa fa-user'></i> {rental.bedrooms + 4} guests</span>
-            <span><i className='fa fa-bed'></i> {rental.bedrooms + 2} beds</span>
+            <span><i className='fa fa-user'></i> {rental.bedrooms} guests</span>
+            <span><i className='fa fa-bed'></i> {rental.bedrooms} beds</span>
+            <span><i className='fa fa-home'></i> {rental.squareFootage} square feet</span>
 
             <div className="rentalDetailCategory"><i className='fa fa-address-card'></i>Self Check In</div>
             <span className="rentalDetailCategoryInfo">Check yourself in with the lock box.</span>

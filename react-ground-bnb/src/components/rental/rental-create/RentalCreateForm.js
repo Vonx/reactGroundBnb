@@ -60,13 +60,21 @@ const RentalCreateForm = props => {
                 validate={[required, isNum]}
             />
             <Field
+                name="squareFootage"
+                label="Square Footage"
+                placeholder="2000"
+                rows="1"
+                className="form-control"
+                component={formInput}
+                validate={[required, isNum]}
+            />
+            <Field
                 name="shared"
                 label="Shared?"
                 id="shared"
                 component={formInput}
                 type="checkbox"
             />
-
             <Field
                 name="dailyRate"
                 label="Daily rate"

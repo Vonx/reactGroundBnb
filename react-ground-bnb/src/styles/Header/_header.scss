@@ -10,7 +10,7 @@
 
   .bwm-search {
     height: 50px;
-    width: 300px !important;
+
   }
 
   .navbar-brand {
@@ -28,11 +28,6 @@
       filter:brightness(85%);
       -webkit-transition: 0.5s;
     }
-  }
-
-  .navContainer {
-    margin-left: 10vh !important;
-
   }
 
   .nav-item {
@@ -64,10 +59,18 @@
     }
   }
 
+  #navbarDropdownMenuLink {
+    color: black;
+  }
+
+  #navbarNavAltMarkup {
+    flex: 1;
+    justify-content: right;
+  }
+
   .dropdown-menu {
     .dropdown-item {
       font-size: 13px;
-      position: relative;
 
       &:hover{
         border-color: transparent;

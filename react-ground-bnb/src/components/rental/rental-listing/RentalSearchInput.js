@@ -32,10 +32,10 @@ class RentalSearchInput extends React.Component {
     render(){
 
         return (
-            <div className='form-inline my-2 my-md-0'>
+            <div className='form-inline my-1 my-md-0'>
                 <input onKeyPress={(event)=>{this.handleKeyPress(event)}}
                     ref={this.searchInput}
-                       className='form-control mr-sm-2 bwm-search'
+                       className='form-control bwm-search'
                        type='search'
                        placeholder='Try New York'
                        aria-label='Search'></input>

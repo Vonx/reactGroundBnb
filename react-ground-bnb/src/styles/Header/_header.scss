@@ -6,15 +6,15 @@
   box-shadow: none !important;
   position: relative;
   top: 0;
-  height:145px;
-
-  .bwm-search {
-    height: 50px;
-
-  }
+  height:120px;
 
   .navbar-brand {
     margin-right: 30px;
+  }
+
+  .bwm-search {
+    height: 50px;
+    width: 250px !important;
   }
 
   .blackLogo{
@@ -50,7 +50,6 @@
   .btn-bwm-search {
     border-color: black !important;
     color: black !important;
-
 
     &:hover, &:focus, &:active {
       background-color: mintcream !important;

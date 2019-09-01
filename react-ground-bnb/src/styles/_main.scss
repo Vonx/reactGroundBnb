@@ -22,7 +22,7 @@
 }
 
 .navBoxContainer {
-  height: 145px;
+  height: 120px;
 }
 
 .searchCard {
@@ -38,6 +38,31 @@
   font-weight: 600;
 
 }
+
+.searchContainer{
+  margin-left: 3vw;
+  margin-right: 3vw;
+
+  .bwm-search {
+    height: 50px;
+    width: 52vw !important;
+  }
+
+
+  .btn-bwm-search {
+    border-color: black !important;
+    color: black !important;
+    min-width: 30px !important;
+
+    &:hover, &:focus, &:active {
+      background-color: mintcream !important;
+      border-color: black !important;
+      color: black !important;
+    }
+  }
+
+
+  }
 
 .cardWide {
   width: 500px;

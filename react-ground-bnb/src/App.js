@@ -33,9 +33,7 @@ class App extends Component {
         super();
         this.state = {
             displayTopNav: true,
-            showSearch: false,
-            positioning: '',
-            displayStarterImage: true
+            positioning: ''
         };
     }
 
@@ -43,19 +41,15 @@ class App extends Component {
         store.dispatch(actions.checkAuthState())
     }
 
-    componentDidMount() {
-        this.setState({displayStarterImage: false});
-    }
-
     render() {
-        const {displayTopNav, displayStarterImage} = this.state;
+        const {displayTopNav} = this.state;
         configureAnchors({keepLastAnchorHash: true});
         return (
         <Provider store={store}>
             <BrowserRouter>
                 <div className='App'>
                         <ScrollableAnchor id={'section1'}>
-                                <Media query="(min-width: 768px)">
+                                <Media query="(min-width: 890px)">
                                     {matches =>
                                         matches ? (
                                             <div onClick={()=>{goToAnchor('section2')}}>
@@ -76,7 +70,7 @@ class App extends Component {
                         <ScrollableAnchor id={'section2'}>
                             <div>
 
-                                <Media query="(min-width: 768px)">
+                                <Media query="(min-width: 890px)">
                                     {matches =>
                                         matches ? (
                                             <ViewportBlock component={AnimHeader}
@@ -86,7 +80,10 @@ class App extends Component {
                                                            onLeaveViewport={() =>
                                                                this.setState({displayTopNav: true})}/>
                                         ) : (
-                                            <RentalSearchInput />
+                                            <div className="searchContainer">
+                                                <RentalSearchInput />
+                                            </div>
+
                                         )
                                     }
                                 </Media>
@@ -102,7 +99,6 @@ class App extends Component {
                                         <ProtectedRoute exact path='/rentals/new' component={RentalCreate}/>
                                         <Route exact path='/rentals/:id' component={RentalDetail}/>
                                     </Switch>
-
                                 </div>
                             </div>
                         </ScrollableAnchor>

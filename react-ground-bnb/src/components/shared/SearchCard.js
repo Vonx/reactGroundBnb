@@ -17,7 +17,6 @@ export function SearchCard() {
                 <div className='card-block'>
                     <br />
                     <p>Book unique homes and experiences</p>
-                    <RentalSearchInput />
                 </div>
 
             </div>

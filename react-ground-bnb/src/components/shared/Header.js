@@ -60,7 +60,7 @@ class Header extends React.Component {
                     <span className='navbar-toggler-icon'></span>
                 </button>
 
-                <div className='collapse navbar-collapse ' id='navbarNavAltMarkup'>
+                <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
                     <div className="navContainer ml-auto">
                         <div className='navbar-nav'>
                             {this.renderAuthButtons()}

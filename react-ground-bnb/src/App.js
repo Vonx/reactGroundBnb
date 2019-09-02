@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Redirect, Switch, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import { Provider }from 'react-redux';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
@@ -14,15 +14,11 @@ import * as actions from 'actions';
 import {LoggedInRoute} from "./components/shared/auth/LoggedInRoute";
 import {RentalCreate} from "./components/rental/rental-create/RentalCreate";
 import ScrollableAnchor from 'react-scrollable-anchor';
-import {removeHash, goToAnchor, configureAnchors} from 'react-scrollable-anchor';
+import {removeHash} from 'react-scrollable-anchor';
 import {ViewportBlock} from "./components/shared/ViewportBlock";
 import {AnimHeader} from "./components/shared/AnimHeader";
-import {SearchCard} from "./components/shared/SearchCard";
-import Media from 'react-media';
-import Header from "./components/shared/Header";
-import RentalSearchInput from "./components/rental/rental-listing/RentalSearchInput";
-
-
+import {TopSection} from "./components/shared/TopSection";
+import {BottomNav} from "./components/shared/BottomNav";
 
 
 const store = require('./reducers').init();
@@ -35,58 +31,39 @@ class App extends Component {
             displayTopNav: true,
             positioning: ''
         };
+        this.handleBottomNavState = this.handleBottomNavState.bind(this);
     }
+
 
     componentWillMount() {
         store.dispatch(actions.checkAuthState())
     }
 
+    handleBottomNavState(){
+        return <ViewportBlock component={AnimHeader}
+                              onEnterViewport={() => {
+                                  removeHash();
+                                  this.setState({displayTopNav: false})
+                              }}
+                              onLeaveViewport={() =>
+                                  this.setState({displayTopNav: true})}/>
+    }
+
     render() {
         const {displayTopNav} = this.state;
-        configureAnchors({keepLastAnchorHash: true});
         return (
         <Provider store={store}>
             <BrowserRouter>
                 <div className='App'>
                         <ScrollableAnchor id={'section1'}>
-                                <Media query="(min-width: 890px)">
-                                    {matches =>
-                                        matches ? (
-                                            <div onClick={()=>{goToAnchor('section2')}}>
-                                            <div className="topHeader">
-                                                {displayTopNav && <AnimHeader displaySearch={false} displayAuth={false} positioning={'position-absolute'}/>}
-                                                <img className="topImage" src={process.env.PUBLIC_URL + '/image/waterImage.jpg'} alt=""/>
-                                            </div>
-                                            <SearchCard/>
-                                            </div>
-                                        ) : (
-                                            <AnimHeader displaySearch={false} size="navbar-expand-sm" img={true}/>
-                                        )
-                                    }
-                                </Media>
+                            <TopSection displayTopNav={displayTopNav}/>
                         </ScrollableAnchor>
+
                         <a href='#section1' onClick={removeHash()}> .</a>
 
                         <ScrollableAnchor id={'section2'}>
                             <div>
-
-                                <Media query="(min-width: 890px)">
-                                    {matches =>
-                                        matches ? (
-                                            <ViewportBlock component={AnimHeader}
-                                                           onEnterViewport={() => {
-                                                               removeHash();
-                                                               this.setState({displayTopNav: false})}}
-                                                           onLeaveViewport={() =>
-                                                               this.setState({displayTopNav: true})}/>
-                                        ) : (
-                                            <div className="searchContainer">
-                                                <RentalSearchInput />
-                                            </div>
-
-                                        )
-                                    }
-                                </Media>
+                                <BottomNav handleNav={this.handleBottomNavState}/>
                                 <div className='pageContainer'>
                                     <Switch>
                                         <Route exact path='/' render={() => {return <Redirect to='/rentals'/>}}/>

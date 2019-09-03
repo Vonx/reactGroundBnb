@@ -49,7 +49,7 @@ class Header extends React.Component {
         )
     }
     render() {
-        const {positioning, showSearch, size} = this.props;
+        const {positioning, showSearch, size, color} = this.props;
         return (
             <nav className={`navbar navbar-light ${size} ${positioning}`}>
                 <Link className='navbar-brand' to='/rentals'>
@@ -61,7 +61,7 @@ class Header extends React.Component {
                 </button>
 
                 <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-                    <div className="navContainer ml-auto">
+                    <div className={`navContainer ml-auto ${color}`}>
                         <div className='navbar-nav'>
                             {this.renderAuthButtons()}
                         </div>

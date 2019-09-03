@@ -16,11 +16,6 @@ export class RentalCreate extends React.Component {
         this.submitRental = this.submitRental.bind(this);
     }
 
-    componentDidMount() {
-        goToAnchor('section2');
-    }
-
-
     submitRental(rentalData){
         console.log(rentalData);
         actions.createRental(rentalData).then(

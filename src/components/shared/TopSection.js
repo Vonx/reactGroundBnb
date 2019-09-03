@@ -10,7 +10,7 @@ export class TopSection extends React.Component{
     render(){
         const {displayTopNav} = this.props;
         return (
-            <Media query="(min-width: 1050px)">
+            <Media query="(min-width: 930px)">
                 {matches =>
                     matches ? (
                         <div>
@@ -26,7 +26,15 @@ export class TopSection extends React.Component{
                             <SearchCard/>
                         </div>
                     ) : (
-                        <AnimHeader displaySearch={false} size="navbar-expand-sm" img={true}/>
+                        <Media query="(min-width: 576px)">
+                            {matches =>
+                                matches ? (
+                                    <AnimHeader displaySearch={false} size="navbar-expand-sm" img={true}/>
+                                ) : (
+                                    <AnimHeader displaySearch={false} color={true} size="navbar-expand-sm" img={true}/>
+                                )
+                            }
+                        </Media>
                     )
                 }
             </Media>

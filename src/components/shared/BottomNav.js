@@ -7,7 +7,7 @@ export class BottomNav extends React.Component {
     render(){
         const {handleNav} = this.props;
     return(
-        <Media query="(min-width: 1050px)">
+        <Media query="(min-width: 930px)">
             {matches =>
                 matches ? (
                     handleNav()

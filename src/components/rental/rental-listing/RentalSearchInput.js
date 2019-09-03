@@ -39,7 +39,7 @@ class RentalSearchInput extends React.Component {
                        type='search'
                        placeholder='Try New York'
                        aria-label='Search'></input>
-                <button onClick={()=>{this.handleSearch()}} className='btn btn-outline-success my-2 my-sm-0 btn-bwm-search' type='submit'>Search</button>
+                <button onClick={()=>{this.handleSearch()}} className='btn btn-outline-dark-green my-2 my-sm-0 searchButton' type='submit'>Search</button>
             </div>
         );
     }

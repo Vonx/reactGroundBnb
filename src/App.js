@@ -39,6 +39,7 @@ class App extends Component {
         store.dispatch(actions.checkAuthState())
     }
 
+
     handleBottomNavState(){
         return <ViewportBlock component={AnimHeader}
                               onEnterViewport={() => {
@@ -56,7 +57,7 @@ class App extends Component {
             <BrowserRouter>
                 <div className='App'>
                         <ScrollableAnchor id={'section1'}>
-                            <TopSection displayTopNav={displayTopNav}/>
+                           <TopSection displayTopNav={displayTopNav}/>
                         </ScrollableAnchor>
 
                         <a href='#section1' onClick={removeHash()}> .</a>

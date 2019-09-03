@@ -70,29 +70,6 @@ class Header extends React.Component {
             </nav>
         )
     }
-/*    render() {
-        const {positioning, showSearch, size, navType} = this.props;
-        return (
-            <nav className={`${navType} navbar-light ${size} ${positioning}`}>
-                    <Link className='navbar-brand' to='/rentals'>
-                        <img className="blackLogo" src={process.env.PUBLIC_URL + '/image/groundBnbLogoWhite.png'} alt=""/>
-                    </Link>
-                    {showSearch && <RentalSearchInput/>}
-                    <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
-                        <span className='navbar-toggler-icon'></span>
-                    </button>
-
-                    <div className='collapse navbar-collapse ' id='navbarNavAltMarkup'>
-                        <div className="navContainer ml-auto">
-                            <div className='navbar-nav'>
-                                {this.renderAuthButtons()}
-                            </div>
-                        </div>
-                    </div>
-            </nav>
-        )
-    }*/
-
 }
 
 function mapStateToProps(state) {

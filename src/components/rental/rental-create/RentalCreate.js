@@ -2,6 +2,7 @@ import React from "react";
 import RentalCreateForm from "./RentalCreateForm";
 import * as actions from "../../../actions";
 import {Redirect} from "react-router-dom";
+import {goToAnchor} from 'react-scrollable-anchor';
 
 export class RentalCreate extends React.Component {
     constructor(){
@@ -14,6 +15,11 @@ export class RentalCreate extends React.Component {
         this.rentalCategories = ['House', 'Apartment', 'Condo'];
         this.submitRental = this.submitRental.bind(this);
     }
+
+    componentDidMount() {
+        goToAnchor('section2');
+    }
+
 
     submitRental(rentalData){
         console.log(rentalData);
@@ -35,6 +41,7 @@ export class RentalCreate extends React.Component {
             return <Redirect to={{pathname: '/rentals'}} />
 
         }
+
         return (
             <section id='newRental'>
                 <div className='bwm-form'>

@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="045765da-4f72-41c3-86e7-0b62c2a041b7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/react-ground-bnb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/react-ground-bnb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/Infinity-1.1s-105px.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/alpImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/create-rental.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/groundBnbLogoWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/login-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/register-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/waterImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/config/prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/controllers/booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/controllers/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/fake-db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/helpers/mongoose.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/rental.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/bookings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/rentals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/actions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/actions/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/Booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingManage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/login/LoginForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/map/googleMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/register/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/register/RegisterForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-create/RentalCreate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-create/RentalCreateForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalAssets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalDetailInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalListing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalManage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalManageCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalSearchInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/AnimHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/BottomNav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/SearchCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/TopSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/ViewportBlock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/auth/LoggedInRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/auth/ProtectedRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmFileUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmTextArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/displayError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/formInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/validators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/helpers/googleHelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/helpers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/auth-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/booking-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/rental-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/auth-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/axios-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/cacher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/setupProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/Header/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/_main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/booking/_booking.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/booking/_user-bookings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/form/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-detail.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-listing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-manage.scss" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/TopSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalListing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/BottomNav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManageCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>navbarDropdownMenuLink</find>
+      <find>rent</find>
+      <find>rental-room</find>
+      <find>BookingCard</find>
+      <find>theImage</find>
+      <find>card</find>
+      <find>RentalSearch</find>
+      <find>could not</find>
+      <find>rentalCOn</find>
+      <find>font</find>
+      <find>switch</find>
+      <find>provider</find>
+      <find>RentalDe</find>
+      <find>container</find>
+      <find>navbarNavA</find>
+      <find>navstyle</find>
+      <find>navcon</find>
+      <find>displaySt</find>
+      <find>show</find>
+      <find>outl</find>
+      <find>145</find>
+      <find>bwm-sear</find>
+      <find>bwm-search</find>
+      <find>out</find>
+      <find>cardWid</find>
+      <find>searchT</find>
+      <find>top</find>
+      <find>Protected</find>
+      <find>Protec</find>
+      <find>topS</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/reducers/booking-reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/booking/BookingCard.js" />
+        <option value="$PROJECT_DIR$/src/components/booking/Booking.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-listing/RentalManageCard.js" />
+        <option value="$PROJECT_DIR$/server/package.json" />
+        <option value="$PROJECT_DIR$/server/config/config.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/config/prod.js" />
+        <option value="$PROJECT_DIR$/server/controllers/user.js" />
+        <option value="$PROJECT_DIR$/server/controllers/booking.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/services/axios-service.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-detail/RentalMap.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/form/validators.js" />
+        <option value="$PROJECT_DIR$/server/index.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/FadeIn.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/form/Fade.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-listing/RentalListing.js" />
+        <option value="$PROJECT_DIR$/src/styles/_variables.scss" />
+        <option value="$PROJECT_DIR$/src/styles/form/_form.scss" />
+        <option value="$PROJECT_DIR$/src/styles/rental/_rental-manage.scss" />
+        <option value="$PROJECT_DIR$/src/styles/booking/_user-bookings.scss" />
+        <option value="$PROJECT_DIR$/src/components/shared/Fade.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/map/googleMap.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/ViewportBlock.js" />
+        <option value="$PROJECT_DIR$/src/styles/rental/_rental-listing.scss" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-detail/RentalDetail.js" />
+        <option value="$PROJECT_DIR$/src/components/booking/BookingManage.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-listing/RentalManage.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js" />
+        <option value="$PROJECT_DIR$/server/models/rental.js" />
+        <option value="$PROJECT_DIR$/server/routes/rentals.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-create/RentalCreateForm.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-detail/RentalDetailInfo.js" />
+        <option value="$PROJECT_DIR$/src/helpers/socksSetup.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/AnimHeader.js" />
+        <option value="$PROJECT_DIR$/src/styles/rental/_rental-detail.scss" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearchInput.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/TopNav.js" />
+        <option value="$PROJECT_DIR$/src/styles/Header/_header.scss" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/styles/_main.scss" />
+        <option value="$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js" />
+        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/SearchCard.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/BottomNav.js" />
+        <option value="$PROJECT_DIR$/src/components/shared/TopSection.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-31" />
+    <option name="y" value="51" />
+    <option name="width" value="1354" />
+    <option name="height" value="644" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="rental-create" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="rental" type="462c0819:PsiDirectoryNode" />
+              <item name="rental-listing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactGroundBnb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactGroundBnb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sampleapp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/image" />
+      <recent name="$PROJECT_DIR$/src/components/rental/rental-listing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/shared" />
+      <recent name="$PROJECT_DIR$/src/components/rental/rental-listing" />
+      <recent name="$PROJECT_DIR$/src/components/rental/rental-listingjs" />
+      <recent name="$PROJECT_DIR$/src/components/rental/rental-detail" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="045765da-4f72-41c3-86e7-0b62c2a041b7" name="Default" comment="" />
+      <created>1543456354719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543456354719</updated>
+      <workItem from="1543456356381" duration="406000" />
+      <workItem from="1543456789943" duration="2689000" />
+      <workItem from="1544988386608" duration="5925000" />
+      <workItem from="1546218044907" duration="5377000" />
+      <workItem from="1546814907119" duration="6212000" />
+      <workItem from="1547018051875" duration="63000" />
+      <workItem from="1547578863454" duration="4276000" />
+      <workItem from="1548711145785" duration="29000" />
+      <workItem from="1554080687120" duration="1134000" />
+      <workItem from="1554085688409" duration="2822000" />
+      <workItem from="1555348051922" duration="608000" />
+      <workItem from="1555439335747" duration="10441000" />
+      <workItem from="1555555004228" duration="2462000" />
+      <workItem from="1555963015093" duration="4687000" />
+      <workItem from="1556473323019" duration="6237000" />
+      <workItem from="1556565484666" duration="5541000" />
+      <workItem from="1557098176686" duration="650000" />
+      <workItem from="1561493238720" duration="8497000" />
+      <workItem from="1561586038519" duration="52000" />
+      <workItem from="1561586123943" duration="10701000" />
+      <workItem from="1561685426928" duration="14472000" />
+      <workItem from="1562110643732" duration="6151000" />
+      <workItem from="1562176854721" duration="7803000" />
+      <workItem from="1562448367883" duration="36321000" />
+      <workItem from="1562798948561" duration="2915000" />
+      <workItem from="1562806950315" duration="4278000" />
+      <workItem from="1562877644169" duration="4291000" />
+      <workItem from="1562887328056" duration="5348000" />
+      <workItem from="1562970738422" duration="1711000" />
+      <workItem from="1562974528582" duration="567000" />
+      <workItem from="1562976034819" duration="85000" />
+      <workItem from="1562976179944" duration="5657000" />
+      <workItem from="1563154559354" duration="2391000" />
+      <workItem from="1563222268898" duration="1211000" />
+      <workItem from="1563223547384" duration="4549000" />
+      <workItem from="1563230595878" duration="5202000" />
+      <workItem from="1563318002234" duration="10548000" />
+      <workItem from="1563395224126" duration="13596000" />
+      <workItem from="1563484737650" duration="13858000" />
+      <workItem from="1563567107519" duration="14991000" />
+      <workItem from="1564010849088" duration="6676000" />
+      <workItem from="1564099347217" duration="6966000" />
+      <workItem from="1564176978745" duration="9397000" />
+      <workItem from="1564436804051" duration="24126000" />
+      <workItem from="1564696568209" duration="14864000" />
+      <workItem from="1564865301768" duration="17082000" />
+      <workItem from="1565301454478" duration="20768000" />
+      <workItem from="1565682108500" duration="2028000" />
+      <workItem from="1565726131056" duration="15810000" />
+      <workItem from="1565986133364" duration="13349000" />
+      <workItem from="1566252968910" duration="3545000" />
+      <workItem from="1566333771721" duration="33241000" />
+      <workItem from="1566502068478" duration="3172000" />
+      <workItem from="1566514055791" duration="23875000" />
+      <workItem from="1566680287511" duration="21222000" />
+      <workItem from="1566704039238" duration="1788000" />
+      <workItem from="1566767864975" duration="22174000" />
+      <workItem from="1566846191029" duration="14801000" />
+      <workItem from="1567025619910" duration="8052000" />
+      <workItem from="1567128582183" duration="23138000" />
+      <workItem from="1567206444744" duration="15454000" />
+      <workItem from="1567440844884" duration="14458000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="550740000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="-2" width="1444" height="872" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24787535" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49929178" weight="0.32871014" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49929178" weight="0.32871014" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32871014" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007082" side_tool="true" weight="0.47988904" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/shared/FadeIn.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/shared/form/validators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/booking/_booking.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/booking/_user-bookings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/map/googleMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/booking/BookingCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/booking/BookingManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/booking/Booking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="174" column="1" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/rental/_rental-manage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/helpers/mongoose.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/rental.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2194">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/rentals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="100" column="66" lean-forward="true" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-detail/RentalAssets.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/auth/LoggedInRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/socksSetup.js" />
+    <entry file="file://$PROJECT_DIR$/src/helpers/googleHelpers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-detail/RentalMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/rental/_rental-detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/rental/_rental-listing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/form/_form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-detail/RentalDetailInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-detail/RentalDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearchInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/ViewportBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/Header/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreateForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/register/RegisterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/AnimHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="74" column="5" selection-start-line="74" selection-end-line="80" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/register/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalListing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManageCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/BottomNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/TopSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

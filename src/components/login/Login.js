@@ -3,7 +3,6 @@ import * as actions from "../../actions";
 import LoginForm from "./LoginForm";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
-import {goToAnchor} from 'react-scrollable-anchor';
 
 
 class Login extends React.Component {
@@ -22,7 +21,7 @@ class Login extends React.Component {
     render() {
 
         const {isAuth, errors} = this.props.auth;
-        const { successRegister, redirected } = this.props.location.state || false;
+        const { successRegister } = this.props.location.state || false;
 
         if(isAuth){
             return <Redirect to={{pathname: '/rentals'}} />

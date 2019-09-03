@@ -2,108 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="045765da-4f72-41c3-86e7-0b62c2a041b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/react-ground-bnb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/react-ground-bnb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/Infinity-1.1s-105px.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/alpImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/create-rental.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/groundBnbLogoWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/login-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/register-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/image/waterImage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/config/prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/controllers/booking.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/controllers/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/fake-db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/helpers/mongoose.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/booking.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/rental.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/models/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/bookings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/rentals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/server/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/actions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/actions/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/Booking.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingManage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/booking/BookingModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/login/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/login/LoginForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/map/googleMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/register/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/register/RegisterForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-create/RentalCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-create/RentalCreateForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalAssets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalDetail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalDetailInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-detail/RentalMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalListing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalManage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalManageCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/rental/rental-listing/RentalSearchInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/AnimHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/BottomNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/SearchCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/TopSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/ViewportBlock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/auth/LoggedInRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/auth/ProtectedRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmFileUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmSelect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/bwmTextArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/displayError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/formInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/components/shared/form/validators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/helpers/googleHelpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/helpers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/auth-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/booking-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/reducers/rental-reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/auth-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/axios-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/services/cacher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/setupProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/Header/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/_main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/booking/_booking.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/booking/_user-bookings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/form/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-detail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-listing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ground-bnb/src/styles/rental/_rental-manage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/SearchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/SearchCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -119,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+            <state relative-caret-position="789">
+              <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -131,70 +32,78 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="480">
+              <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="606">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/shared/TopSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalListing.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/shared/BottomNav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="405">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreateForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="-105">
               <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -215,20 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="90">
               <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManageCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -331,14 +228,14 @@
         <option value="$PROJECT_DIR$/src/components/shared/TopNav.js" />
         <option value="$PROJECT_DIR$/src/styles/Header/_header.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/styles/_main.scss" />
         <option value="$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js" />
         <option value="$PROJECT_DIR$/src/components/shared/Header.js" />
         <option value="$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js" />
-        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/shared/SearchCard.js" />
         <option value="$PROJECT_DIR$/src/components/shared/BottomNav.js" />
         <option value="$PROJECT_DIR$/src/components/shared/TopSection.js" />
+        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
+        <option value="$PROJECT_DIR$/src/styles/_main.scss" />
+        <option value="$PROJECT_DIR$/src/components/shared/SearchCard.js" />
       </list>
     </option>
   </component>
@@ -553,12 +450,12 @@
       <workItem from="1567025619910" duration="8052000" />
       <workItem from="1567128582183" duration="23138000" />
       <workItem from="1567206444744" duration="15454000" />
-      <workItem from="1567440844884" duration="14458000" />
+      <workItem from="1567440844884" duration="15494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="550740000" />
+    <option name="totallyTimeSpent" value="551776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-2" width="1444" height="872" extended-state="6" />
@@ -819,38 +716,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/login/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreateForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -874,16 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="74" column="5" selection-start-line="74" selection-end-line="80" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/register/Register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -894,19 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalListing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -916,7 +767,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalManageCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -933,52 +784,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js">
+    <entry file="file://$PROJECT_DIR$/src/components/shared/TopSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="390">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -993,12 +804,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/TopSection.js">
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="90">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreateForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-create/RentalCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/rental/rental-listing/RentalCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,7 +18,7 @@ export function SearchCard() {
                     </div>
                     <div className="topInternalSection col-md-6">
                         <p>Earn money from your extra space</p>
-                        <div onClick={()=>{setTimeout(()=>{goToAnchor('section2')}, 100)}}>
+                        <div onClick={()=>{goToAnchor('section2')}}>
                             <Link to='/rentals/new'><button className='btn-bwmTop danger-color'>Host</button></Link>
                         </div>
                     </div>

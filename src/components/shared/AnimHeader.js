@@ -6,13 +6,13 @@ export class AnimHeader extends React.Component {
 
     render() {
         const {positioning, displaySearch, size, displayAuth, color} = this.props;
-        let pos = '', shwSearch = true, dspAuth = true, theSize="navbar-expand-md", col;
+        let pos, shwSearch, col, theSize, dspAuth;
 
-        if(positioning !== undefined){pos = positioning; }
-        if(displaySearch !== undefined) {shwSearch = displaySearch;}
+        positioning !== undefined ? pos = positioning : pos = '';
+        displaySearch !== undefined ? shwSearch = displaySearch : shwSearch = true;
         color !== undefined ? col = 'warning-color' : col ='';
-        if(size !== undefined) {theSize=size;}
-        if(displayAuth !== undefined) {dspAuth = displayAuth}
+        size !== undefined ? theSize = size : theSize="navbar-expand-md";
+        displayAuth !== undefined ? dspAuth = displayAuth : dspAuth = true;
 
         return (
             <MDBAnimation type="fadeInDown" className="theAni">

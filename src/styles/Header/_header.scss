@@ -4,10 +4,11 @@
   background-color: transparent;
   font-family: Helvetica, sans-serif;
   box-shadow: none !important;
-  position: absolute;
+  position: relative;
   top: 0;
   height:120px;
   outline: none !important;
+  z-index: 12;
 
   .navbar-brand {
     margin-right: 30px;
@@ -68,6 +69,7 @@
 
   .dropdown-menu {
     background-color: lightgray;
+    z-index: inherit;
     .dropdown-item {
       font-size: 13px;
 

@@ -17,8 +17,8 @@ export function SearchCard() {
                 </div>
                 <div className='card-block'>
                     <br />
-                    <button className='btn btn-outline-dark btnWide' onClick={()=>{goToAnchor('section2')}}>Explore</button>
-                    <Link to="/rentals/new"><button className='btn btn-outline-grey btnWide' onClick={() => {setTimeout(()=>{goToAnchor('section2')}, 350)}}>Host</button></Link>
+                    <Link to="/rentals" onClick={()=>{setTimeout(()=>{goToAnchor('section2')}, 75)}}><button className='btn btn-outline-dark btnWide'>Explore</button></Link>
+                    <Link to="/rentals/new"><button className='btn btn-outline-dark btnWide' onClick={() => {setTimeout(()=>{goToAnchor('section2')}, 350)}}>Host</button></Link>
 
                 </div>
             </div>

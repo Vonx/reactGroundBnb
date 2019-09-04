@@ -20,7 +20,7 @@ class Login extends React.Component {
     render() {
 
         const {isAuth, errors} = this.props.auth;
-        const { successRegister, redirected } = this.props.location.state || false;
+        const { successRegister } = this.props.location.state || false;
 
         if(isAuth){
             return <Redirect to={{pathname: '/rentals'}} />
@@ -33,7 +33,6 @@ class Login extends React.Component {
                     <div className="col-md-5">
                         <h1>Login</h1>
                         {successRegister && <div className="alert alert-success">Successfully registered! You can log in now</div>}
-                        {redirected && <div className="alert alert-danger">You must be logged in to host a rental</div>}
                         <LoginForm submitLoginCb={this.loginUser} errors={errors}/>
                     </div>
                     <div className="col-md-6 ml-auto">

@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="045765da-4f72-41c3-86e7-0b62c2a041b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/AnimHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/AnimHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/SearchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/SearchCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Header/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="189">
               <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -55,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="240">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -100,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/Header/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-439">
+            <state relative-caret-position="146">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -234,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/components/shared/auth/ProtectedRoute.js" />
         <option value="$PROJECT_DIR$/src/components/login/Login.js" />
         <option value="$PROJECT_DIR$/src/components/shared/AnimHeader.js" />
-        <option value="$PROJECT_DIR$/src/styles/_main.scss" />
         <option value="$PROJECT_DIR$/src/styles/Header/_header.scss" />
+        <option value="$PROJECT_DIR$/src/styles/_main.scss" />
       </list>
     </option>
   </component>
@@ -457,12 +453,12 @@
       <workItem from="1567025619910" duration="8052000" />
       <workItem from="1567128582183" duration="23138000" />
       <workItem from="1567206444744" duration="15454000" />
-      <workItem from="1567440844884" duration="29998000" />
+      <workItem from="1567440844884" duration="30640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566280000" />
+    <option name="totallyTimeSpent" value="566922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-2" width="1444" height="872" extended-state="6" />
@@ -857,16 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/shared/SearchCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -897,17 +883,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
+    <entry file="file://$PROJECT_DIR$/src/styles/Header/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="146">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Header/_header.scss">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="189">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

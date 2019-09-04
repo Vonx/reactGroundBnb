@@ -17,6 +17,11 @@
   z-index:1;
 }
 
+.viewport-block {
+  position: relative;
+  z-index: 13;
+}
+
 .theAni {
   z-index: 11;
 }

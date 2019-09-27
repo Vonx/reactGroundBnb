@@ -24,9 +24,34 @@
   .bwm-card {
     border: none;
     margin-bottom: 20px;
+    background: black !important;
+
+    .img-block {
+      -webkit-transition: 0.45s;
+      opacity: 1;
+      .card-hover-text {
+        position: absolute;
+        color: white;
+        opacity: 0;
+        -webkit-transition: 0.45s;
+        top: 40%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -40%);
+      }
+      &:hover {
+        -webkit-transition: 0.45s;
+        opacity: .9;
+        .card-hover-text {
+          opacity: 1;
+          -webkit-transition: 0.45s;
+        }
+      }
+    }
 
     .card-block {
-      padding-top: 8px;
+      padding: 8px;
+      background: white;
 
       .card-subtitle {
         margin: 0;

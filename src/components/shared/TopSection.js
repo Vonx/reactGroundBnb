@@ -21,6 +21,9 @@ export class TopSection extends React.Component{
                                     {displayTopNav &&
                                     <AnimHeader displaySearch={false} displayAuth={false} positioning={'position-absolute'}/>}
                                 </div>
+                                <div className="downImageContainer clickable" onClick={()=>{goToAnchor('section2');}}>
+                                    <img className="downArrowImage clickable" src={process.env.PUBLIC_URL + '/image/downArrow.png'} alt=""/>
+                                </div>
                                 <img className="topImage" src={process.env.PUBLIC_URL + '/image/waterImage.jpg'} alt=""/>
                             </div>
                             <SearchCard/>

@@ -108,7 +108,7 @@ font-size: 15px;
 }
 
 .clickable {
-  a:hover {
+  &:hover {
   cursor: pointer;
   }
 }
@@ -146,6 +146,28 @@ font-size: 15px;
   align-items: center;
   vertical-align: middle;
 
+}
+.downImageContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  opacity: .4;
+  -webkit-transition: 0.25s;
+
+  &:hover{
+    opacity: .8;
+    -webkit-transition: 0.25s;
+  }
+}
+.downArrowImage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-48%, -50%);
+  width: 13vw;
+  height: 10vh;
 }
 
 .theImageContainer img {
